@@ -5,6 +5,7 @@ app.get('/', (req, res) => {
     res.send("Hello World");
 });
 
-app.listen(3000, () =>{
+const port = porcess.env.port || 3000;
+app.listen(port, () =>{
     console.log("Hello World");
 });
